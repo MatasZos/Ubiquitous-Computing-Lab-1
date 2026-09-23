@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void button1_click(View view){
 
-        TextView tv = (TextView) findViewById(R.id.button2);
+        TextView tv = (TextView) findViewById(R.id.submitButton);
         tv.setText("Thank you name, your request is being processed");
     }
 
