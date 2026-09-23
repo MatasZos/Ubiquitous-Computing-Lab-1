@@ -1,6 +1,8 @@
 package com.example.userinformationapplication;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void button1_click(View view){
+
+        TextView tv = (TextView) findViewById(R.id.button2);
+        tv.setText("Thank you name, your request is being processed");
+    }
+
 }
