@@ -2,7 +2,9 @@ package com.example.userinformationapplication;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void button1_click(View view){
 
-        TextView tv = (TextView) findViewById(R.id.submitButton);
-        tv.setText("Thank you name, your request is being processed");
+        EditText editText = (EditText)findViewById(R.id.name);
+        Toast.makeText(this,"Thank you "+ editText.getText() + ", your request is being processed",Toast.LENGTH_LONG).show();
     }
 
 }
