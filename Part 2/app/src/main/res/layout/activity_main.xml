@@ -36,9 +36,21 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/guessInput"
-            android:text="Play Again" />
+            android:layout_below="@id/guessInput"
+            android:text="Guess" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guessInput"
+            android:text="Number of Guesses:" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guessInput"
+            android:text="Play Again!" />
+        
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
