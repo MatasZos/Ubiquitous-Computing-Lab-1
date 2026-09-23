@@ -31,7 +31,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView"
             android:hint="Enter your guess"
-            android:inputType="number" />
+            android:inputType="number"
+            android:onClick="guessNumber"
+            />
 
         <Button
             android:layout_width="match_parent"
@@ -49,8 +51,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/guessInput"
-            android:text="Play Again!" />
-        
+            android:text="Play Again!"
+            android:onClick="playAgain"
+            />
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
