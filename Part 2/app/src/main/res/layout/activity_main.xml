@@ -32,7 +32,7 @@
             android:layout_below="@id/textView"
             android:hint="Enter your guess"
             android:inputType="number"
-            android:onClick="guessNumber"
+
             />
 
         <Button
@@ -40,7 +40,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/guessInput"
             android:layout_marginTop="4dp"
-            android:text="Guess" />
+            android:text="Guess"
+            android:onClick="guessNumber"/>
+
 
         <TextView
             android:id="@+id/counter"
