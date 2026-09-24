@@ -39,21 +39,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/guessInput"
+            android:layout_marginTop="4dp"
             android:text="Guess" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guessInput"
+            android:layout_marginTop="50dp"
+            android:text="Number of Guesses:" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/guessInput"
-            android:text="Number of Guesses:" />
+            android:layout_below="@id/counter"
+            android:text=""
+            android:textAlignment="center"/>
+
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/guessInput"
-            android:text="Play Again!"
+            android:layout_marginTop="82dp"
             android:onClick="playAgain"
-            />
+            android:text="Play Again!" />
 
     </RelativeLayout>
 
