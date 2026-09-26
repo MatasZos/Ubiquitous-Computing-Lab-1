@@ -11,12 +11,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import org.w3c.dom.Text;
-
-
 public class MainActivity extends AppCompatActivity {
 
-
+    int SecretNumber;
+    int numberofGuesses;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,12 +39,37 @@ public class MainActivity extends AppCompatActivity {
         TextView count = (TextView)findViewById(R.id.counter);
 
 
+        int userGuess = Integer.parseInt(guess.getText().toString());
+        numberofGuesses++;
 
+        if (userGuess == SecretNumber){
+            result.setText("Correct answer");
+        }
+        else if (userGuess < SecretNumber){
+            result.setText("Higher!");
+        }
 
+        else if(userGuess > SecretNumber){
+            result.setText("Lower!");
+        }
+
+        count.setText("Number of guesses is:" + numberofGuesses);
 
     }
 
     public void playAgain(View view){
+        SecretNumber = (int) (Math.random() *30)+1;
+        numberofGuesses = 0;
+
+        EditText guess = (EditText) findViewById(R.id.guessInput);
+        TextView result = (TextView) findViewById(R.id.result);
+        TextView count = (TextView) findViewById(R.id.counter);
+
+
+        guess.setText("");
+        result.setText("");
+        count.setText("Number of Guesses: 0");
+
 
     }
 }

@@ -36,6 +36,7 @@
             />
 
         <Button
+            android:id="@+id/guessButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/guessInput"
@@ -48,11 +49,12 @@
             android:id="@+id/counter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/guessInput"
+            android:layout_below="@id/guessButton"
             android:layout_marginTop="50dp"
             android:text="Number of Guesses:" />
 
         <TextView
+            android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/counter"
@@ -63,8 +65,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/guessInput"
-            android:layout_marginTop="82dp"
+            android:layout_below="@id/result"
+            android:layout_marginTop="90dp"
             android:onClick="playAgain"
             android:text="Play Again!" />
 
